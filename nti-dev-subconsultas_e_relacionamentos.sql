@@ -3,7 +3,7 @@
 -- o nome do aluno 
 -- e a média de suas notas.
 
-SELECT a.nomealuno, ROUND( AVG(n.nota), 1 )
+SELECT a.nomealuno AS "ALUNO", ROUND( AVG(n.nota), 1 ) AS "MÉDIA DAS NOTAS"
 FROM alunos a
 INNER JOIN notas n
 ON a.alunoid = n.alunoid
